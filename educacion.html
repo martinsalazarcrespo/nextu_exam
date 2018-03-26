@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Hoja de Vida</title>
+  </head>
+  <body>
+    <svg style="border: 2px solid black;" width="100px" height="50px" viewBox="0 0 100 50">
+      <image xlink:href="img/logo.svg" width="100px" height="50px"></image>
+    </svg>
+
+    <h1><u>Hoja de Vida</u></h1>
+    <h2>Martín Salazar Crespo</h2>
+    <h3>Piura, 14 de Junio de 1979</h3>
+
+    &nbsp;&nbsp;<a href="index.html">Inicio</a>
+    <br>
+    &nbsp;&nbsp;<a href="educacion.html">Educación</a>
+    <br>
+    &nbsp;&nbsp;<a href="experiencia.html">Experiencia</a>
+    <br>
+
+    <hr>
+
+    <h2><u>Educación</u></h2>
+
+    <table border="0">
+      <thead>
+        <tr>
+          <th width="100">Año</th>
+          <th width="200" align="left">Institución</th>
+          <th width="300" align="left">Carrera/Curso</th>
+          <th width="80">Lugar</th>
+          <th width="100">¿Culminó?</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="center">1995</td>
+          <td>Universidad de Piura</td>
+          <td>Ingeniería de Sistemas</td>
+          <td align="center">Piura</td>
+          <td align="center">Si</td>
+          <td><input type="submit" value="Eliminar Estudio"></td>
+        </tr>
+        <tr>
+          <td align="center">2003</td>
+          <td>Universidad de Piura</td>
+          <td>Gestión de Servicios bajo marco de ITIL </td>
+          <td align="center">Piura</td>
+          <td align="center">Si</td>
+          <td><input type="submit" value="Eliminar Estudio"></td>
+        </tr>
+        <tr>
+          <td align="center">2008</td>
+          <td>Universidad Esan</td>
+          <td>Diplomado de Procesos</td>
+          <td align="center">Lima</td>
+          <td align="center">Si</td>
+          <td><input type="submit" value="Eliminar Estudio"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Agregar Estudios</h3>
+    <table border="0">
+      <tr>
+        <td width="700">
+          <form name="frmestudios" autocomplete="on">
+            <fieldset >
+              <legend>Estudios</legend>
+              <label for="anio">Año:</label>
+              <select name="anio">
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+              </select>
+              <br><br>
+              <label for="institucion">Institución:</label>
+              <input type="text" name="institucion" placeholder="Ingrese institución" required>
+              <br><br>
+              <label for="carrera">Carrera/Curso:</label>
+              <input type="text" name="carrera" placeholder="Ingrese carrera">
+              <br><br>
+              <label for="lugar">Lugar:</label>
+              <textarea name="lugar" rows="2" cols="40"></textarea>
+              <br><br>
+              <label for="culmino">¿Culminó?:</label>
+              <input type="radio" name="culmino" value="si" checked> Si
+              <input type="radio" name="culmino" value="no"> No
+              <br><br>
+              <input type="submit" name="enviar" value="Registrar Estudio">
+              <input type="reset" name="limpiar" value="Limpiar Estudio">
+            </fieldset>
+          </form>
+        </td>
+      </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+
+    <footer>
+      <h3>Contacto:</h3>
+      <ul>
+          <li><b>Email:</b> martin_salazar@outlook.com</li>
+          <li><b>Teléfono:</b> 978369409</li>
+          <li><b>Dirección:</b> Calle Antonio de la Haza 206 Urb. San Juan. Chorrillos. Lima</li>
+          <li><b>Facebook:</b> Martin Salazar</li>
+      </ul>
+    </footer>
+  </body>
+</html>
